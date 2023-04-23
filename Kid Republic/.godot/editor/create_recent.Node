@@ -1,0 +1,10 @@
+VBoxContainer
+CheckBox
+Button
+ColorRect
+CanvasModulate
+TextureRect
+AnimatedSprite2D
+Sprite2D
+AnimationPlayer
+AnimationTree
