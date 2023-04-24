@@ -28,6 +28,11 @@ func _physics_process(_delta):
 		animationState.travel("Idle")
 	move_and_slide() # Does movement.
 	
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_cancel"):
+		$PauseMenu.pause()
+		print("esc pressed")
+	
 	
 		
 		
