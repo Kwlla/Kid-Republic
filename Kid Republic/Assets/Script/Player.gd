@@ -1,8 +1,7 @@
-extends CharacterBody2D
+class_name Player extends CharacterBody2D
 
 # Some variables
 var speed = 250
-var idle = 0
 
 # Allows use of multiple tools neccesary to animate our player sprite
 @onready var animationPlayer = $AnimationPlayer
@@ -28,7 +27,16 @@ func _physics_process(_delta):
 		animationState.travel("Idle")
 	move_and_slide() # Does movement.
 	
+<<<<<<< Updated upstream
 	
 		
 		
 	
+=======
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_cancel"):
+		$PauseMenu.pause()
+		print("esc pressed")
+	
+
+>>>>>>> Stashed changes
